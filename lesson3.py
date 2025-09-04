@@ -80,12 +80,59 @@
 # То программа должна вывести:
 # 389
 
-# n = int(input("enter your integer number: "))
+# n = 0
 # count = 0
-#
-# while n > 0:
+# while n >= 0:
 #     count += n
-#     n = int(input("enter your integer number: "))
+#     n = int(input("Enter an integer number: "))
 # else:
 #     print(count)
 
+# Positive, Negative, or Zero
+# Create a variable n, whose value is determined by keyboard input.
+# If n is greater than zero, print "Positive".
+# If n is less than zero, print "Negative".
+# If n equals zero, print "Zero".
+
+# n = int(input("Enter a number: "))
+# if n > 0:
+#     print("positive")
+# elif n < 0:
+#     print("negative")
+# else:
+#     print("zero")
+#
+# 2. Grade by Score
+# The user enters a score (0–100).
+# If the score is greater than or equal to 90 — print "Excellent".
+# If from 70 to 89 — print "Good".
+# If from 50 to 69 — print "Satisfactory".
+# Otherwise — print "Unsatisfactory".
+
+# n = int(input("Enter your score: "))
+#
+# if n >= 90:
+#     print("Excellent")
+# elif 70 <= n < 90:
+#     print("Good")
+# elif 50 <= n < 70:
+#     print("Satisfactory")
+# elif 0 <= n < 50:
+#     print("Unsatisfactory")
+# else:
+#     print("Try again")
+
+# 3. Multiplication Table
+# The user enters a number n.
+# Display the multiplication table for n from 1 to 10 (inclusive) using a for loop.
+#
+# Example for n = 3:
+#
+# 3 × 1 = 3
+# 3 × 2 = 6
+# ...
+# 3 × 10 = 30
+
+n = int(input("Enter a number: "))
+for i in range(1,11):
+    print(f"{n} * {i} = {n * i}")
