@@ -1,3 +1,57 @@
+# print(4 > 3) # true
+# print(4 != 3) # true
+#
+# print("abc" == "abc") # true
+# print("abc" == "Abc") # false
+#
+# print(len("abc"))
+#
+# print("a" in "abc")
+#
+# is_admin = False
+# is_manager = False
+# age = 15
+#
+# if is_admin == True:
+#     print("Admin")
+# elif is_manager == True:
+#     print("Manager")
+# elif age >= 18:
+#     print("Adult")
+# else:
+#     print("Who are you?")
+
+
+# age = 25
+# is_citizen = True
+#
+# if age >= 18 and is_citizen == True:
+#     print("You can vote.")
+# else:
+#     print("You can not vote.")
+
+#
+
+
+# while n > 0:
+#     print(n)
+#     n -= 1
+
+# while True:
+#     print(n)
+#     n -= 1
+#
+#     if n == 5:
+#         break
+
+while True:
+    message = input("Enter a message: ")
+
+    if message == "quit":
+        break
+    print(message)
+
+
 # Четное или нечетное?
 # Создать переменную n, значение которой определяется через ввод данных с клавиатуры.
 # Если n является четным числом, то вывести на экран слово “четное”.
@@ -133,6 +187,6 @@
 # ...
 # 3 × 10 = 30
 
-n = int(input("Enter a number: "))
-for i in range(1,11):
-    print(f"{n} * {i} = {n * i}")
+# n = int(input("Enter a number: "))
+# for i in range(1,11):
+#     print(f"{n} * {i} = {n * i}")
