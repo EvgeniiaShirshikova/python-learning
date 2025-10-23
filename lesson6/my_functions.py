@@ -17,9 +17,9 @@ def sum_ignore_non_numbers(items):
             total += item
     return total
 
-# items = [1, 2, 'A']
-#
-# print(sum_ignore_non_numbers(items))
+items = [1, 2, 'A']
+
+print(sum_ignore_non_numbers(items))
 
 # 2
 # Треугольник.
@@ -36,7 +36,7 @@ def is_triangle(a, b, c):
     else:
         return False
 
-# print(is_triangle(3, 4, 5))
+print(is_triangle(3, 4, 5))
 
 
 # 3
@@ -56,7 +56,7 @@ def average(*args):
     else:
         return sum(args) / len(args)
 
-# print(average(1, 2, 3, 4, 5, 6, 7, 8))
+print(average(1, 2, 3, 4, 5, 6, 7, 8))
 
 # 4
 # Общие строки.
@@ -81,7 +81,7 @@ def common_strings(list1, list2, ignore_case = True):
              new_list.append(item)
      return new_list
 
-# fruits_1 = ['banana', 'APPLE', 'watermelon', 'cherry']
-# fruits_2 = ['Mango', 'apple', 'orange', 'cherry']
-#
-# print(common_strings(fruits_1, fruits_2, False))
+fruits_1 = ['banana', 'APPLE', 'watermelon', 'cherry']
+fruits_2 = ['Mango', 'apple', 'orange', 'cherry']
+
+print(common_strings(fruits_1, fruits_2, False))

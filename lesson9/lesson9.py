@@ -50,6 +50,18 @@ registration("gngsdfds", "dkjfhjshdfgkj")
 # - Если данные были введены корректно, то программа должна вывести
 # “Успешно!” и выйти из бесконечного цикла.
 #
+
+while True:
+    username = input("Enter username: ")
+    password = input("Enter password: ")
+
+    try:
+        registration(username, password)
+        print("Registration successful")
+        break
+    except RegistrationError:
+        print("Registration failed")
+
 # 3
 # Дорогой дневник...
 # - Создайте пустой текстовый файл journal.txt
@@ -70,6 +82,22 @@ registration("gngsdfds", "dkjfhjshdfgkj")
 # - Если пользователь ввел что-то другое:
 # o Программа ничего не делает, просто возвращается к следующей
 # итерации бесконечного цикла.
+
+while True:
+    message = input("What do you want to do? Type 'read', 'write' or 'exit': ")
+    if message == 'write':
+        note = input("Enter note: ")
+        with open("journal.txt", "a", encoding='utf-8') as file:
+            file.write(f"{note}\n")
+    elif message == 'read':
+        with open("journal.txt", "r", encoding='utf-8') as file:
+            print(file.read())
+    elif message == 'exit':
+        print("Bye! See you later!")
+        break
+
+
+
 #
 # Повторение прошлого материала.
 #

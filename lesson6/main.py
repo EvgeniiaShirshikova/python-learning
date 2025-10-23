@@ -10,8 +10,8 @@
 # print(func.is_triangle(5, 6, 8))
 
 # option 4
-# from my_functions import *
-# print(is_triangle(5, 6, 8))
+from my_functions import *
+print(is_triangle(5, 6, 8))
 
 
 # Домашнее задание (занятие 6)
